@@ -87,7 +87,11 @@
                             of the latest and greatest technologies to prepare
                             them for their first dev role
                         </p>
-                        <button class="btn btn-lg btn-primary">
+                        <button
+                            class="btn btn-primary btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#enroll"
+                        >
                             Start The Enrollment
                         </button>
                     </div>
@@ -559,11 +563,13 @@
 
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <span class="fw-bold pe-2">Main Location:</span> 50
-                                Main st Boston MA
+                                <span class="fw-bold pe-2">Main Location:</span>
+                                50 Main st Boston MA
                             </li>
                             <li class="list-group-item">
-                                <span class="fw-bold pe-2">Enrollment Phone:</span>
+                                <span class="fw-bold pe-2"
+                                    >Enrollment Phone:</span
+                                >
                                 (555) 555-5555
                             </li>
                             <li class="list-group-item">
@@ -571,7 +577,9 @@
                                 (333) 333-3333
                             </li>
                             <li class="list-group-item">
-                                <span class="fw-bold pe-2">Enrollment Email:</span>
+                                <span class="fw-bold pe-2"
+                                    >Enrollment Email:</span
+                                >
                                 (555) enroll@frontendbc.test
                             </li>
                             <li class="list-group-item">
@@ -592,13 +600,76 @@
         <!-- Footer -->
         <footer class="bg-dark text-white text-center position-relative p-5">
             <div class="container">
-                <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>      
+                <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
 
                 <a href="#" class="position-absolute bottom-0 end-0 p-5">
                     <i class="bi bi-arrow-up-circle h1"></i>
                 </a>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="enroll" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Start The Enrollment
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="lead">
+                            Fill out this form and we will get back to you.
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label"
+                                    >Full Name:</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label"
+                                    >Email Address:</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label"
+                                    >Phone Number:</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap JS -->
         <script
