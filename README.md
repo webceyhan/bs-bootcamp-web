@@ -8,7 +8,7 @@
 
  <!-- HEADER ///////////////////////////////////////////////////////////// -->
 
-# Fake Bootcamp Website with Bootstrap
+# Frontend Bootcamp Website with Bootstrap
 
 Simple one-page website for a fake bootcamp using the latest version of Bootstrap with Bootstrap Icons
 
